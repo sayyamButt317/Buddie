@@ -1,7 +1,6 @@
 import 'package:buddie/Views/welcome.dart';
 import 'package:flutter/material.dart';
 import 'dart:async';
-import 'package:flutter/cupertino.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -25,9 +24,9 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return CupertinoPageScaffold(
+    return Scaffold(
         backgroundColor: Colors.white,
-        child: Center(
+        body: Center(
             child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [Image.asset("images/Buddie.png", scale: 20)])));
